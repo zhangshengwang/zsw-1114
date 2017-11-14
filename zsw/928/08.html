@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>高阶函数：函数加工厂</title>
+  </head>
+  <body>
+  <script type="text/javascript">
+  function isEven(num)  {
+    return num % 2 === 0;
+  }
+  function not(func){
+    return function(arg){
+      return !func(arg);
+    };
+  }
+
+
+  var isOdd = not(isEven);//是否是奇数
+  console.log(isOdd(1));//true
+  console.log(isOdd(2));//false
+  console.log(isOdd(3));//true
+  </script>
+  </body>
+</html>

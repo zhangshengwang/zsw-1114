@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function Student(name,age,score){
+        this.name = name;
+        this.age = age;
+        this.score = score;
+      }
+      Student.prototype.exam = function(){
+        console.log("明天考试。。。");
+      };
+      var one = new Student('lisi',20,88);
+      var two = new Student('zhangsan',28,68);
+      one.exam();
+      two.exam();
+      console.log(one,two);
+    </script>
+  </body>
+</html>

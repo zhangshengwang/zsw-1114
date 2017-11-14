@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>闭包</title>
+  </head>
+  <body>
+    <script src="./jquery.js" charset="utf-8"></script>
+  <script>
+    function fun(){
+      var a = 10;
+      return function(){
+        console.log("a = ",a);
+      };
+    }
+    innerFun = fun();
+    innerFun();
+
+    console.log($ ('*').length);//返回数值越小网页加载越快引入jquery
+  </script>
+  </body>
+</html>

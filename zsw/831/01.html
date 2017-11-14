@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      input{
+        width:50px;
+        height:50px;
+      }
+      input:checked + span{
+        background:pink;
+      }
+      input:checked + span::before{
+        content:"俺被选中咧";
+      }
+      p:target{
+        font-size:50px;
+        color:red;
+      }
+      .one:empty::after{
+        content:"俺是空";
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox">
+    <span></span>
+    <br><br>
+    <a href="#p1">锚点</a>
+    <p id="p1">固定方式固定收费规定方式固定收费</p>
+    <div class="one">给多少个大概都发生过</div>
+    <div class="one"></div>
+    <div class="one"></div>
+  </body>
+</html>

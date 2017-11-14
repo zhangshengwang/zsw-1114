@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>封装函数，实现自定义的bind函数</title>
+  </head>
+  <body>
+  <script type="text/javascript">
+  function bind(handler,context)  {
+    //从bind的第三个参数开始切片
+    var preArg = Array.prototype.slice.call(arguments,2);
+    return function(){
+      var curArg = Array.prototype.slice.call(arguments,0);
+      var args = preArg.concat(curArg);
+      return handler.apply(context,args);
+    };
+  }
+  </script>
+  </body>
+</html>

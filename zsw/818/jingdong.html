@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物!</title>
+    <style>
+    *{
+      margin:0;
+      padding:0
+    }
+    .w{
+      width:1190px;
+      margin:0 auto;
+    }
+    a{
+      text-decoration:none;
+    }
+    ul li{
+      list-style:none;
+    }
+    .head_top{
+      width:2000px;
+      height:75px;
+      background:url("./jingdong/011.png");
+     }
+     .head_block{
+       width:2000px;
+       height:33px;
+       background-color:rgb(227,228,229);
+     }
+     .head_block .logo{
+       float:left;
+       margin-left:-75px;
+     }
+     .head_block .logo img{
+       width:193px;
+       height:173px;
+     }
+     .head_block .gps{
+       float:left;
+       margin:4px auto 2px 2px;
+     }
+     .head_block .gps img{
+       width:15px;
+       height:23px;
+     }
+     .head_block .left,
+     .head_block .right{
+       height:33px;
+       line-height:33px;
+     }
+     .head_block .left{
+       float:left;
+     }
+     .head_block .right{
+       width:700px;
+       float:right;
+       margin-right:38px;
+
+     }
+     .head_block a{
+       color:#a1a3a6;
+       font-size:13px;
+       padding:0 10px;
+     }
+     .head_block a:hover{
+       color:#f10215;
+     }
+     .head_bottom{
+       width:1000px;
+       height:140px;
+     }
+     .head_bottom .ewm{
+       float:right;
+       margin:0px -330px auto 2px;
+     }
+     .head_bottom .ewm img{
+       width:66px;
+       height:70px;
+     }
+     .head_bottom .che{
+       width:185px;
+       height:33px;
+       border:1px solid gray;
+       margin:26px -180px auto auto;
+       padding:2px 6px;
+       float:right;
+     }
+     .head_bottom .che .tuiche{
+       margin:4px 4px 4px 24px;
+     }
+     .head_bottom .che .tuiche img{
+       width:30px;
+       height:26px;
+     }
+     .head_bottom .che .gouwuche{
+       font:normal 13px red \5FAE\8F6F\96C5\9ED1;
+       margin:-30px 11px 2px 60px;
+     }
+     .head_bottom .che .gouwuche a{
+       color:red;
+     }
+     .head_bottom .che .ling{
+       margin:-30px 10px 8px 152px;
+     }
+     .head_bottom .che .ling img{
+       width:15px;
+       height:20px;
+     }
+     .head_bottom .search{
+        width:550px;
+        height:35px;
+        float:right;
+        border:1px solid red;
+        margin:27px 44px auto auto;
+      }
+     .head_bottom .search_button{
+       float:right;
+       margin:0 -2px;
+     }
+
+     .head_bottom .search_button img{
+       width:50px;
+       height:35px;
+     }
+     .head_bottom .search_input{
+       width:497px;
+       height:31px;
+       border:1px solid red;
+       margin:-1px 30px 2px -1px;
+       padding:2px 2px;
+     }
+     .head_bottom .search_input .zhaoxiangji{
+       float:right;
+       margin:7px 4px 11px 2px;
+
+     }
+     .head_bottom .search_input .zhaoxiangji img{
+       width:28px;
+       height:20px;
+     }
+     .head_bottom .yiyuanmiao{
+       width:500px;
+       height:12px;
+       margin:-5px 2px 2px 2px;
+       padding:2px;
+       float:left;
+       font-size:12px;
+     }
+     .head_bottom .yiyuanmiao a{
+       color:#d9d6c3;
+     }
+     .head_bottom .miaosha{
+       width:500px;
+       height:20px;
+       margin:25px 2px 2px -18px;
+       padding:0 10px;
+       font-size:16px;
+       font-weight:bolder;
+       float:left;
+     }
+     .head_bottom .miaosha a{
+       color:black;
+     }
+     .head_bottom .sjj{
+       float:right;
+       margin:100px -330px 4px auto;
+     }
+     .head_bottom .sjj img{
+       height:40px;
+       width:190px;
+     }
+     .head_zuomiddle .zuo{
+       width:191px;
+       height:480px;
+       background-color:#6e6568;
+       float:left;
+       margin:0px 2px 2px -193px;
+     }
+     .head_zuomiddle .zuo ul{
+       height:23px;
+       line-height:23px;
+       font-size:14px;
+       padding:auto 1px;
+       margin:5px 1px 1px 1px;
+     }
+
+     .head_youmiddle .you .ul{
+       height:20px;
+       line-height:20px;
+       font-size:14px;
+       padding:auto 1px;
+       margin:5px 1px 0px 1px;
+     }
+     .head_zuomiddle .zuo ul li{
+       float:left;
+       height:18px;
+       line-height:18px;
+       margin:1px 1px 1px 1px;
+       padding:1px 1px;
+     }
+     .head_zuomiddle .zuo ul li a{
+       color:white;
+     }
+     .head_zuomiddle .zuo ul li a:hover{
+       color:red;
+     }
+     .head_zuomiddle .you ul a{
+       float:left;
+       height:18px;
+       line-height:18px;
+       margin:1px 1px 1px 1px;
+       padding:1px 1px;
+     }
+     .head_youmiddle .you .ul a{
+       color:white;
+     }
+     .head_youmiddle .you .ul a:hover{
+       color:red;
+     }
+     .head_zhongmiddle .shang{
+       height:344px;
+       float:left;
+       margin:0 4px;
+     }
+     .head_zhongmiddle .shang img{
+       width:790px;
+       height:340px;
+     }
+     .head_zhongmiddle .xiazuo{
+       float:left;
+       margin:5px 5px;
+     }
+     .head_zhongmiddle .xiazuo img{
+       width:390px;
+       height:130px;
+     }
+     .head_zhongmiddle .xiayou{
+       float:left;
+       margin:4px 4px;
+     }
+     .head_zhongmiddle .xiayou img{
+       width:390px;
+       height:130px;
+     }
+     .head_youmiddle .you{
+       width:190px;
+       height:475px;
+       float:right;
+       margin:1px -190px;
+       padding:1px 1px;
+     }
+     .head_youmiddle .youshang{
+       width:190px;
+       height:200px;
+       margin:60px 14px -1px -1px;
+       border-bot
+
+     }
+     .head_youmiddle .youshangzuo{
+       float:left;
+       margin:-86px 1px 1px 1px;
+     }
+     .head_youmiddle .youshangzuo img{
+       width:40px;
+       height:40px;
+     }
+     .head_youmiddle .youshangyou{
+       width:100px;
+       height:30px;
+       font-size:12px;
+       float:left;
+       margin:-84px 88px;
+     }
+     .head_youmiddle .youshangzhong{
+       width:100px;
+       height:40px;
+       float:left;
+       font-size:12px;
+       padding:10 auto;
+       margin:-48px 6px 2px 52px;
+     }
+     .head_youmiddle .youshangxia{
+       width:155px;
+       height:24px;
+       border:1px solid red;
+       margin:91px 1px 1px 35px;
+     }
+     .head_youmiddle .youzhong{
+       width:190px;
+       height:180px;
+       float:left;
+       border-top:1px solid #a1a3a6;
+       margin:-154px -1px
+     }
+     .head_youmiddle .youzhongzuo{
+       width:80px;
+       height:13px;
+       font-size:13px;
+       margin:2px 2px 2px 2px;
+     }
+     .head_youmiddle .youzhongyou{
+       width:40px;
+       height:13px;
+       float:right;
+       font-size:13px;
+       margin:-14px 2px 2px 2px;
+     }
+     .head_youmiddle .youzhongzhong{
+       width:200px;
+       height:100px;
+       font-size:13px;
+       padding:4px 2px;
+       margin:23px 2px 2px 2px;
+     }
+     .head_youmiddle .youxia{
+       width:190px;
+       height:200px;
+       border-top:1px solid #a1a3a6;
+       margin:-9px -1px;
+     }
+     .head_youmiddle .youxia .ul {
+       float:left;
+     }
+     .head_youmiddle .youxia li{
+       margin:1px 1px 1px 1px;
+       padding:1px 1px 1px 1px;
+     }
+     .head_youmiddle .youxia_hang .ah{
+       float:left;
+       width:180px;
+       height:40px;
+       padding:1px 1px;
+       margin:1px 1px 1px 1px;
+     }
+     .head_middle .youxia_hang .ah .ul a{
+       float:left;
+       margin:1px 1px 1px 1px;
+     }
+     .head_youmiddle .youxia_hang .a1{
+      float:left;
+       margin:1px 1px 1px 1px;
+      border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .a1 img{
+       width:10px;
+       height:10px;
+     }
+     .head_youmiddle .youxia_hang .a2{
+      float:left;
+       margin:1px 1px 1px 1px;
+       border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .a2 img{
+       width:10px;
+       height:10px;
+     }
+     .head_youmiddle .youxia_hang .a3{
+      float:left;
+       margin:1px 1px 1px 1px;
+
+       border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .a3 img{
+       width:15px;
+       height:20px;
+     }
+     .head_youmiddle .youxia_hang .a4{
+       float:left;
+       margin:1px 1px 1px 1px;
+       border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .a4 img{
+       width:15px;
+       height:20px;
+     }
+     .head_youmiddle .youxia_hang .bh{
+       float:left;
+       width:180px;
+       height:40px;
+       padding:0px 0px;
+       margin:1px 1px 1px 1px;
+     }
+     .head_youmiddle .youxia_hang .bh .ul a{
+       float:left;
+       margin:1px 1px 1px 1px;
+     }
+     .head_youmiddle .youxia_hang .b1{
+       float:left;
+       margin:1px 1px 1px 1px;
+      border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .b1 img{
+       width:15px;
+       height:20px;
+     }
+     .head_youmiddle .youxia_hang .b2{
+       float:left;
+       margin:1px 1px 1px 1px;
+       border:1px solid #a1a3a6;
+     }
+     .head_middle .youxia_hang .b2 img{
+       width:15px;
+       height:20px;
+     }
+     .head_youmiddle .youxia_hang .b3{
+      float:left;
+       margin:1px 1px 1px 1px;
+       border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .b3 img{
+       width:15px;
+       height:20px;
+     }
+     .head_youmiddle .youxia_hang .b4{
+       float:left;
+       margin:1px 1px 1px 1px;
+       border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .b4 img{
+       width:15px;
+       height:20px;
+     }
+     .head_youmiddle .youxia_hang .ch{
+       float:left;
+       width:180px;
+       height:40px;
+       margin:1px 1px 1px 1px;
+       padding:0px 0px;
+     }
+     .head_youmiddle .youxia_hang .ch .ul a{
+       float:left;
+       margin:1px 1px 1px 1px;
+     }
+     .head_youmiddle .youxia_hang .c1{
+       float:left;
+       margin:1px 1px 1px 1px;
+       border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .c1 img{
+       width:15px;
+       height:20px;
+     }
+     .head_youmiddle .youxia_hang .c2{
+       float:left;
+       margin:1px 1px 1px 1px;
+       border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .c2 img{
+       width:15px;
+       height:20px;
+     }
+     .head_youmiddle .youxia_hang .c3{
+       float:left;
+       margin:1px 1px 1px 1px;
+       border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .c3 img{
+       width:15px;
+       height:20px;
+     }
+     .head_youmiddle .youxia_hang .c4{
+       float:left;
+       margin:1px 1px 1px 1px;
+       border:1px solid #a1a3a6;
+     }
+     .head_youmiddle .youxia_hang .c4 img{
+       width:15px;
+       height:20px;
+     }
+     .head_youmiddle .you a{
+       color:black;
+     }
+
+    </style>
+  </head>
+  <body>
+  <div class="head">
+    <div class="head_top"></div>
+      <div class="head_block">
+        <div class="w">
+        <div class="logo"><img src="./jingdong/012.png" alt=""></div>
+        <div class="gps"><img src="./jingdong/023.png" alt=""></div>
+        <div class="left"><a href="#">北京</a></div>
+        <div class="right">
+          <a href="#">你好，请登录&nbsp免费注册</a>
+          <a href="#">我的订单</a>
+          <a href="#">我的京东</a>
+          <a href="#">京东会员</a>
+          <a href="#">企业采购</a>
+          <a href="#">客户服务</a>
+          <a href="#">网址导航</a>
+          <a href="#">手机京东</a>
+        </div>
+      </div>
+      </div>
+    <div class="head_bottom">
+      <div class="w">
+      <div class="ewm"><img src="./jingdong/024.png" alt=""></div>
+      <div class="sjj"><img src="./jingdong/25.png" alt=""></div>
+      <div class="che">
+        <div class="tuiche"><img src="./jingdong/27.png" alt=""></div>
+          <div class="gouwuche"><a href="#">我的购物车</a></div>
+        <div class="ling"><img src="./jingdong/26.png" alt=""></div>
+      </div>
+         <div class="search">
+        <div class="search_button"><img src="./jingdong/28.png" alt=""></div>
+        <div class="search_input">
+          <div class="zhaoxiangji"><img src="./jingdong/29.png" alt=""></div>
+      </div>
+      <div class="yiyuanmiao">
+        <a href="#">一元秒电脑</a>
+        <a href="#">平板电脑节</a>
+        <a href="#">农资周年庆</a>
+        <a href="#">七夕据会</a>
+        <a href="#">低至5折</a>
+        <a href="#">爱士堡啤酒</a>
+        <a href="#">花洒套装</a>
+        <a href="#">夏日饮品</a>
+      </div>
+      <div class="miaosha">
+        <a href="#">秒杀</a>
+        <a href="#">优惠券</a>
+        <a href="#">闪购</a>
+        <a href="#">拍卖</a>
+        <a href="#">服务城</a>
+        <a href="#">京东超市</a>
+        <a href="#">生鲜</a>
+        <a href="#">全球购</a>
+        <a href="#">京东金融</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="head">
+  <div class="w">
+  <div class="head_zuomiddle">
+      <div class="zuo">
+        <ul>
+          <li><a href="#">家用电器</a></li></ul>
+        <ul>
+          <li><a href="#">手机</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">运营商</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">数码</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">电脑</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">办公</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">家居</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">家具</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">家装</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">厨具</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">男装</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">女装</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">童装</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">内衣</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">美妆个户</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">宠物</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">女鞋</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">箱包</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">钟表</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">珠宝</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">男鞋</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">运动</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">户外</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">汽车</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">汽车用品</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">母婴</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">玩具乐器</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">食品</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">酒类</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">生鲜</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">特产</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">礼品鲜花</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">农资绿植</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">医药保健</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">计生情趣</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">图书</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">音像</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">电子书</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">机票</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">酒店</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">旅游</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">生活</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">理财</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">众筹</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">白条</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="#">保险</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="head_youmiddle">
+        <div class="you">
+          <div class="youshang">
+            <div class="youshangzuo"><img src="./jingdong/33.png" alt=""></div>
+            <div class="youshangyou">Hi，欢迎来到京...</div>
+            <div class="youshangzhong">
+              <a href="#">登录</a>
+              <a href="#">注册</a></div>
+            <div class="youshangxia"></div>
+          </div>
+          <div class="youzhong">
+            <div class="youzhongzuo">
+              <a href="#">促销</a>
+              <a href="#">公告</a>
+            </div>
+            <div class="youzhongyou">
+              <a href="#">更多</a>
+            </div>
+            <div class="youzhongzhong">
+              <div><a href="#">ONLY新品低至64.5元</a></div>
+              <div><a href="#">七夕购鲜花赢生日会门票</a></div>
+              <div><a href="#">呵护健康满399减100</a></div>
+              <div><a href="#">每日享折扣&nbsp京东品质游</a></div>
+            </div>
+          </div>
+          <div class="youxia">
+            <div class="ul">
+            <div class="ah">
+              <a href="#" target="_blank"><img src="./jingdong/50.png"></a>
+              <a href="#" target="_blank"><img src="./jingdong/51.png"></a>
+              <a href="#" target="_blank"><img src="./jingdong/52.png"></a>
+              <a href="#" target="_blank"><img src="./jingdong/53.png"></a>
+            </div>
+
+            <div class="bh">
+              <a href="#" target="_blank"><img src="./jingdong/54.png"></a>
+              <a href="#" target="_blank"><img src="./jingdong/55.png"></a>
+              <a href="#" target="_blank"><img src="./jingdong/56.png"></a>
+              <a href="#" target="_blank"><img src="./jingdong/57.png"></a>
+            </div>
+            <div class="ch">
+              <a href="#" target="_blank"><img src="./jingdong/58.png"></a>
+              <a href="#" target="_blank"><img src="./jingdong/59.png"></a>
+              <a href="#" target="_blank"><img src="./jingdong/60.png"></a>
+              <a href="#" target="_blank"><img src="./jingdong/61.png"></a>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+        <div class="head_zhongmiddle">
+      <div class="shang"><img src="./jingdong/30.png" alt=""></div>
+      <span class="xiazuo"><img src="./jingdong/31.png" alt=""></span>
+      <span class="xiayou"><img src="./jingdong/32.png" alt=""></span>
+    </div>
+  </div>
+  </div>
+ </body>
+</html>

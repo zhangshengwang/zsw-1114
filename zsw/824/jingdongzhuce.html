@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>个人注册</title>
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    input {
+      width: 220px;
+      height: 35px;
+    }
+
+    .top {
+      text-align: center;
+      border-bottom: 2px solid #d3d7d4;
+    }
+
+    .top img {
+      width: 2000px;
+      height: 100px;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .right img {
+      width: 836px;
+      height: 712px;
+    }
+
+    .bottom {
+      text-align: center;
+      margin-top: -100px;
+    }
+
+    .bottom img {
+      width: 2000px;
+      height: 170px;
+    }
+
+    .left {
+      width: 400px;
+      height: 570px;
+      margin: 50px 50px 200px 400px;
+      font-size: 14px;
+    }
+
+    .left .one{
+      width: 400px;
+      height: 48px;
+      border: 1px solid #d3d7d4;
+      margin-top: 30px;
+      line-height: 48px;
+    }
+    .left .two{
+      width: 400px;
+      height: 48px;
+      border: 1px solid #d3d7d4;
+      margin-top: 30px;
+      line-height: 48px;
+    }
+    .left .three{
+      width: 400px;
+      height: 48px;
+      border: 1px solid #d3d7d4;
+      margin-top: 30px;
+      line-height: 48px;
+    }
+    .left .four{
+      width: 400px;
+      height: 48px;
+      border: 1px solid #d3d7d4;
+      margin-top: 30px;
+      line-height: 48px;
+    }
+    .left .five{
+      width: 400px;
+      height: 48px;
+      border: 1px solid #d3d7d4;
+      margin-top: 30px;
+      line-height: 48px;
+    }
+    .left .six{
+      width: 400px;
+      height: 48px;
+      border: 1px solid #d3d7d4;
+      margin-top: 30px;
+      line-height: 48px;
+    }
+    .left .seven {
+      width: 400px;
+      height: 48px;
+      border: 1px solid #d3d7d4;
+      margin-top: 200px;
+      line-height: 48px;
+    }
+
+    .five {
+      float: right;
+      background-image: url(65.png);
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+
+
+    .left .six {
+      float: right;
+      background-image: url(66.png);
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+
+    .one .left .ul {
+      margin: auto 10px;
+      width: 370px;
+      height: 30px;
+    }
+
+    #yhm {
+      float: left;
+    }
+
+    .left>input {
+      visibility: hidden;
+    }
+
+    .left .seven {
+      background-color: red;
+      text-align: center;
+    }
+
+    .left .seven a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .left p {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="./jquery.min.js"></script>
+  <div class="top"><img src="./62.png" alt=""></div>
+  <div class="right"><img src="./63.png" alt=""></div>
+  <div class="left">
+    <form action="#" method="get">
+      <div class="one">
+        <ul class="yhm">
+          <li>用户名
+            <input style="border:0" type="text" name="username" maxlength="20" value="您的账户名和登录名" onfocus="javascript:if(this.value=='您的账户名和登录名')this.value='';"onblur="if(value==''){value='您的账户名和登录名'}"></li>
+          <p>支持中文</p>
+        </ul>
+      </div>
+      <div class="two">
+        <ul class="szmm">
+          <li>设置密码
+            <input style="border:0" type="password" name="passwd" value="建议至少使用两种字符组合" onfocus="javascript:if(this.value=='建议至少使用两种字符组合')this.value='';onblur="if(value==''){value='建议至少使用两种字符组合'}"></li>
+          <p>建议使用</p>
+        </ul>
+      </div>
+      <div class="three">
+        <ul class="qrmm">
+          <li>确认密码
+            <input style="border:0" type="password" name="passwd1" value="请再次输入密码" onfocus="javascript:if(this.value=='请再次输入密码')this.value='';"onblur="if(value==''){value='请再次输入密码'}"></li>
+          <p>请再次</p>
+        </ul>
+      </div>
+      <div class="four">
+        <ul class="zg0086">
+          <li>中国0086
+            <input style="border:0" type="text" name="中国0086" value="建议使用常用手机" onfocus="javascript:if(this.value=='建议使用常用手机')this.value='';"onblur="if(value==''){value='建议使用常用手机'}"></li>
+          <p>完成验证后</p>
+        </ul>
+      </div>
+      <div class="five">
+
+        <ul class="yzm">
+          <li>验证码
+            <input style="border:0 " type="text" name="验证码" value="请输入验证码" onfocus="javascript:if(this.value=='请输入验证码')this.value='';"onblur="if(value==''){value='请输入验证码'}"></li>
+          <p>看不清？</p>
+        </ul>
+      </div>
+      <div class="six">
+        <ul class="sjyzm">
+          <li>手机验证码
+            <input style="border:0" type="text" name="手机验证码" value="请输入手机验证码" onfocus="javascript:if(this.value=='请输入手机验证码')this.value='';"onblur="if(value==''){value='请输入手机验证码'}"></li>
+        </ul>
+      </div>
+      <div class="seven">
+        <ul>
+          <li><a href="#">立即注册</a></li>
+        </ul>
+      </div>
+    </form>
+  </div>
+  <div class="bottom"><img src="./64.png" alt=""></div>
+  <script type="text/javascript">
+    $(".one").click(function() {
+      $(".one p").css("visibility", "visible");
+      //$(".one span").css("visibility","hidden");
+    });
+
+    $(document).click(function(e) {
+      var x = e.pageX;
+      var y = e.pageY;
+      //  $(".one p").css({
+      //  "top":y + "px",
+      //"left":x + "px",
+      //"display":"none"
+      //});
+    });
+    //  $(".one input").click(function(){
+    //  $(".one p").css("visibility","visible");
+    //});
+    //  var username = $(".one input[name=username]").val();
+    //  var passwd = $(".one input[name=passwd]").val();
+    //  if(!username){
+    //  $(".one p").css("visibility",);
+    //  });
+    $(".two").click(function() {
+      $(".two p").css("visibility", "visible");
+    });
+    $(".three").click(function() {
+      $(".three p").css("visibility", "visible");
+    });
+    $(".four").click(function() {
+      $(".four p").css("visibility", "visible");
+    });
+    $(".five").click(function() {
+      $(".five p").css("visibility", "visible");
+    });
+    $(".six").click(function() {
+      $(".six p").css("visibility", "visible");
+    });
+  </script>
+</body>
+
+</html>

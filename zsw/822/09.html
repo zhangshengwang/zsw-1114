@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery的链式调用</title>
+    <style media="screen">
+      .back{
+        width:200px;
+        height:200px;
+        background:pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">1111</div>
+    <script src="./jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    console.log($(".one"));
+    console.log($(".one").addClass("back"));
+    console.log($(".one").css("color","red"));
+    console.log($(".one").css(["width","height","backgeound-color"]));
+
+    </script>
+
+  </body>
+</html>

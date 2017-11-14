@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    *{
+      margin:0;
+      padding:0;
+    }
+    .btn{
+      text-align:center;
+    }
+    #add{
+      width:100px;
+      height:30px;
+      line-height:30px;
+      text-align:center;
+      border:none;
+      background:#00a6ac;
+    }
+    .stu{
+      width:400px;
+      margin:20px auto;
+      border:1px solid gray;
+      border-collapse:collapse;
+    }
+    .stu td,
+    .stu th{
+      border:1px solid gray;
+    }
+    .stu tr:last-child{
+      text-decoration:underline;
+      color:red;
+      cursor:pointer;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="btn">
+     <button id="add">添加一行</button>
+    </div>
+    <table class="stu">
+      <caption><h1>学员信息</h1></caption>
+    <thead>
+      <th>name</th>
+      <th>age</th>
+      <th>gender</th>
+      <th>delete</th>
+    </thead>
+  <tbody>
+
+  </tbody>
+    </table>
+    <script src="./jquery.min.js" charset="utf-8">
+
+    </script>
+    <script type="text/javascript">
+    var start = 18;
+    $("#add").click(function(){
+      $(".stu tbody").append("<tr><td>张三</td><td>" +start+"</td><td>女</td><td>删除</td></tr>");
+      start = start +1;
+      console.log($(".stu tr td:last").length);
+      $(".stu tr td:last").click(function(){
+        $(this).parent().remove();
+      });
+    });
+
+    </script>
+  </body>
+</html>

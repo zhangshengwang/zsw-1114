@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>倒计时</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      .one{
+        width:400px;
+        height:50px;
+        background:red;
+        position:relative;
+        top:100px;
+        left:50px;
+        line-height:50px;
+         font-size:20px;
+         float:left;
+
+
+      }
+      .one #timer{
+        font-size:16px;
+         float:left;
+         position:absolute;
+         top:3px;
+         left:160px;
+
+
+      }
+    </style>
+  </head>
+  <body onload="timer()">
+    <div class="one">距离xxx还有
+
+    <div id="timer">
+
+    </div>
+    </div>
+    <script type="text/javascript">
+      function timer(){
+        var ts = (new Date(2017,10,11,11,11,11)) - (new Date());
+        var dd = parseInt(ts / 1000 / 60 / 60 / 24, 10);
+        var hh = parseInt(ts /1000 / 60 / 60 % 24, 10 );
+        var mm = parseInt(ts / 1000 / 60 % 60, 10);
+        var ss = parseInt(ts / 1000 % 60 ,10);
+        dd = checkTime(dd);
+        hh = checkTime(hh);
+        mm = checkTime(mm);
+        ss = checkTime(ss);
+        document.getElementById("timer").innerHTML = dd + "天" + hh + "时" + mm + "分"+ ss +"秒";
+        setInterval("timer()",1000);
+
+      }
+      function checkTime(i){
+        if(i < 10){
+          i = "0" + i;
+        }
+        return i;
+      }
+    </script>
+  </body>
+</html>

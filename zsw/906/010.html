@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>轮播图</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      ul, ol{
+        padding:0;
+      }
+      .banner{
+        position:relative;
+        overflow:auto;
+        text-align:center;
+
+      }
+      .banner li{
+        list-style:none;
+      }
+      .banner ul li{
+        float:left;
+      }
+      #b04{
+        width:1920px;
+
+      }
+      #b04 .dots{
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:20px;
+      }
+      #b04 .dots li{
+        display:inline-block;
+        width:10px;
+        height:10px;
+        margin:0 4px;
+        text-indent:-999em;
+        border:2px solid #fff;
+        border-radius:6px;
+        cursor:pointer;
+        opacity:0.4;
+        -webkit-transtion:background 0.5s, opacity 0.5s;
+      }
+      #b04 .dots li.active{
+        background:#fff;
+        opacity:1;
+      }
+      #b04 .arrow{
+        position:absolute;
+        top:200px;
+
+      }
+      #b04 #al{
+        left:15px;
+      }
+      #b04 #ar{
+        right:15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <script src="./jquery.min.js"></script>
+    <script src="unslider.min.js"></script>
+    <div class="banner" id="b04">
+      <ul>
+        <li><img src="34.jpg" alt="" width="1920px" height="1080px"></li>
+        <li><img src="35.jpg" alt="" width="1920px" height="1080px"></li>
+        <li><img src="36.jpg" alt="" width="1920px" height="1080px"></li>
+        <li><img src="37.jpg" alt="" width="1920px" height="1080px"></li>
+        <li><img src="38.jpg" alt="" width="1920px" height="1080px"></li>
+      </ul>
+      <a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="zhaosi.jpg" alt="prev" width="20" height="35"></a>
+   <a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="zhaosi.jpg" alt="next" width="20" height="37"></a>
+    </div>
+  <script type="text/javascript">
+    $(document).ready(function(e){
+      var unslider04 = $('#b04').unslider({
+        dots:true
+      }),
+      data04 = unslider04.data('unslider');
+      $(".unslider-arrow04").click(function(){
+        var fn = this.className.split('')[1];
+        data04[fn]();
+      });
+    });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>太极</title>
+    <style class="cp-pen-styles">
+       *{
+           padding:0;
+           margin:0;
+       }
+       .outer{
+           background: linear-gradient(to bottom,white 50%,black 50%);
+           margin:100px auto;
+           width:400px;
+           height:400px;
+           border-radius: 50%;
+           position:relative;
+           border:1px solid black;
+           transition: all 5s ease;
+       }
+       .outer:hover{
+           transform: rotate(360deg) scale(2);
+       }
+       .outer .left{
+           background: white;
+           width:200px;
+           height:200px;
+           border-radius: 50%;
+           position:absolute;
+           left: 0;
+           top:100px;
+       }
+       .outer .left .leftInner{
+           background: black;
+           width:80px;
+           height:80px;
+           border-radius: 50%;
+           position:absolute;
+           left: 60px;
+           top:60px;
+       }
+       .outer .right{
+           background: black;
+           width:200px;
+           height:200px;
+           border-radius: 50%;
+           position:absolute;
+           right: 0;
+           top:100px;
+       }
+       .outer .right .rightInner{
+           background: white;
+           width:80px;
+           height:80px;
+           border-radius: 50%;
+           position:absolute;
+           left:60px;
+           top:60px;
+       }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="left">
+        <div class="leftInner"></div>
+    </div>
+    <div class="right">
+        <div class="rightInner"></div>
+    </div>
+</div>
+</body>
+</html>

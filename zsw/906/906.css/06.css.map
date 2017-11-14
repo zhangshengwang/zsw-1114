@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,oCAAmC;EAKnC,IAAI;IACF,KAAK,EAAC,MAAM;IACZ,SAAS,EAAC,IAAI;AAPhB,oCAAmC;EAWnC,IAAI;IACF,KAAK,EAAC,GAAG;IACT,SAAS,EAAC,IAAI",
+"sources": ["../906.scss/06.scss"],
+"names": [],
+"file": "06.css"
+}

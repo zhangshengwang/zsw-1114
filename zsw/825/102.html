@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+          }
+        /*相框背景*/
+        #all{
+            width: 800px;
+            height: 800px;
+            background: greenyellow;
+            position: relative;
+            /*父元素必须定位，否则无法约束子元素*/
+        }
+
+        /*相册大图*/
+        #all ul li .big img{
+            width: 500px;
+            height: 400px;
+        }
+        #all ul li .big{
+        position: absolute;
+        left: 70px;
+        top: 130px;
+        display: none;/*内部样式中隐藏大图所在div*/
+        }
+
+        /*小图设置*/
+        #all ul li .smallhover img{
+            width: 70px;
+            height: 50px;
+            position: absolute;
+            right: 100px;
+            float: left;/*设置浮动，可使图片排成一列*/
+
+        }
+
+        #all ul li .smallhover{
+            /*因为小照片放在span标签中，变成内联元素。设置display: block;将其转换为块级元素，才能设置图片外边距*/
+            display: block;
+            margin-top: 40px;
+            overflow: hidden;
+        }
+
+        /*实现效果，鼠标悬浮在小图片时，相应的大图片显示*/
+        #all ul li:hover .big{
+            display: block;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="all">
+            <ul>
+                <li>
+                    <!--小图-->
+                    <span class="smallhover"><img src="./xiaomi/62/png"  /></span>
+                    <!--大图-->
+                    <div class="big" style="display: block;" >
+                        <!--设置初始图片-->
+                        <img src="./xiaomi/69.png" />
+                    </div>
+                </li>
+                <li>
+                    <span class="smallhover"><img src="./xiaomi/62.png"  /></span>
+                    <div class="big"><img src="./xiaomi/69.png"  /></div>
+
+                </li>
+                <li>
+                    <span class="smallhover"><img src="img/lotus3.jpg"  /></span>
+                    <div class="big"><img src="img/lotus3.jpg"  /></div>
+
+                </li>
+            </ul>
+        </div>
+    </body>
+    </html>

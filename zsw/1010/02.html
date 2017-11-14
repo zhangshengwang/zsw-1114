@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>scroll 滚动</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      body{
+        width:3000px;
+        height:3000px;
+      }
+      #btn{
+        position:fixed;
+        right:100px;
+        bottom:100px;
+      }
+    </style>
+  </head>
+  <body>
+  <button id="btn" name="button">回到初始</button>
+  <script type="text/javascript">
+  document.getElementById("btn").onclick = function(){
+    document.documentElement.scrollTop = 0;
+    document.documentElement.scrollLeft = 0;
+  };
+  console.log(document.documentElement.scrollWidth);
+  console.log(document.body.scrollWidth);
+
+
+
+  document.documentElement.scrollTop = 100;
+  document.documentElement.scrollLeft = 100;
+  //此设置在浏览器显示时更新不够即时。。。。。。。。。。
+
+
+  console.log(document.documentElement.scrollTop);
+  console.log(document.documentElement.scrollLeft);
+  </script>
+  </body>
+</html>

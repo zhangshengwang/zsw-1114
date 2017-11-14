@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>判断一个数是否是2的n次方</title>
+  </head>
+  <body>
+  <script type="text/javascript">
+  function is2Pow(num)  {
+    return(num > 0) && ((num & num - 1) === 0 );
+  }
+  
+  console.log(is2Pow(5));
+  </script>
+  </body>
+</html>

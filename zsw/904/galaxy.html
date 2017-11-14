@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>银河系</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      body{
+         background:black;
+         position:relative;
+      }
+    .one{
+      width:100px;
+      height:100px;
+      border-radius:50px;
+      border:1px solid white;
+      position:absolute;
+      left:773px;
+      top:373px;
+      -webkit-animation:one 1s infinite linear;
+    }
+    .one .sun{
+      width:60px;
+      height:60px;
+      border-radius:30px;
+      background:yellow;
+      position:absolute;
+      left:20px;
+      top:20px;
+    }
+    .one .ball1{
+      width:10px;
+      height:10px;
+      border-radius:5px;
+      background:yellow;
+      position:absolute;
+      left:0px;
+      top:21px;
+    }
+    .two{
+      width:160px;
+      height:160px;
+      border-radius:80px;
+      border:1px solid white;
+      position:absolute;
+      left:743px;
+      top:343px;
+      -webkit-animation:two 2s infinite linear;
+    }
+    .two .ball2{
+      width:10px;
+      height:10px;
+      border-radius:5px;
+      background:blue;
+      position:absolute;
+      left:15px;
+      top:21px;
+    }
+    .three{
+      width:240px;
+      height:240px;
+      border-radius:120px;
+      border:1px solid white;
+      position:absolute;
+      left:701px;
+      top:303px;
+      -webkit-animation:three 3s infinite linear;
+    }
+    .three .earth{
+      width:14px;
+      height:14px;
+      border-radius:7px;
+      background:green;
+      position:absolute;
+      left:34px;
+      top:21px;
+      -webkit-animation:earth 3s infinite linear;
+    }
+    .three .earth .moon{
+      width:6px;
+      height:6px;
+      border-radius:3px;
+      background:white;
+      position:absolute;
+      left:7px;
+      top:18px;
+
+
+    }
+    .four{
+      width:300px;
+      height:300px;
+      border-radius:150px;
+      border:1px solid white;
+      position:absolute;
+      left:669px;
+      top:272px;
+      -webkit-animation:four 4s infinite linear;
+    }
+    .ball3{
+      width:20px;
+      height:20px;
+      border-radius:10px;
+      background:red;
+      position:absolute;
+      left:53px;
+      top:18px;
+
+    }
+    .five{
+      width:400px;
+      height:400px;
+      border-radius:200px;
+      border:1px solid white;
+      position:absolute;
+      left:623px;
+      top:221px;
+      -webkit-animation:five 6s infinite linear;
+    }
+    .five .ball4{
+      width:16px;
+      height:16px;
+      border-radius:8px;
+      background:white;
+      position:absolute;
+      left:92px;
+      top:18px;
+    }
+    .six{
+      width:500px;
+      height:500px;
+      border-radius:250px;
+      border:1px solid white;
+      position:absolute;
+      left:573px;
+      top:171px;
+      -webkit-animation:six 8s infinite linear;
+    }
+    .six .ball5{
+      width:12px;
+      height:12px;
+      border-radius:6px;
+      background:green;
+      position:absolute;
+      left:135px;
+      top:18px;
+    }
+    .six .ball5 .huan{
+      width:16px;
+      height:16px;
+      border-radius:8px;
+      border:2px solid white;
+      position:absolute;
+      transform:skew(20deg);
+      left:-4px;
+      top:-3px;
+    }
+
+    .seven{
+      width:600px;
+      height:600px;
+      border-radius:300px;
+      border:1px solid white;
+      position:absolute;
+      left:521px;
+      top:117px;
+      -webkit-animation:seven 1s infinite linear;
+    }
+    .seven .ball6{
+      width:10px;
+      height:10px;
+      border-radius:5px;
+      background:pink;
+      position:absolute;
+      left:177px;
+      top:18px;
+    }
+    .eight{
+      width:700px;
+      height:700px;
+      border-radius:350px;
+      border:1px solid white;
+      position:absolute;
+      left:475px;
+      top:66px;
+      -webkit-animation:eight 5s infinite linear;
+    }
+    .eight .ball7{
+      width:10px;
+      height:10px;
+      border-radius:5px;
+      background:blue;
+      position:absolute;
+      left:219px;
+      top:18px;
+    }
+    .nine{
+      width:800px;
+      height:800px;
+      border-radius:400px;
+      border:1px solid white;
+      position:absolute;
+      left:426px;
+      top:13px;
+      -webkit-animation:nine 5s infinite linear;
+    }
+    .nine .ball8{
+      width:10px;
+      height:10px;
+      border-radius:5px;
+      background:yellow;
+      position:absolute;
+      left:260px;
+      top:18px;
+      /*-webkit-animation:ball8 5s infinite linear;*/
+    }
+    @keyframes one{
+      0%{
+        transform:rotate(0deg);
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+    @keyframes two{
+      0%{
+        transform:rotate(0deg);
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+    @keyframes three{
+      0%{
+        transform:rotate(0deg);
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+    @keyframes four{
+      0%{
+        transform:rotate(0deg);
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+    @keyframes five{
+      0%{
+        transform:rotate(0deg);
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+    @keyframes six{
+      0%{
+        transform:rotate(0deg);
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+    @keyframes seven{
+      0%{
+        transform:rotate(0deg);
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+    @keyframes eight{
+      0%{
+        transform:rotate(0deg);
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+    @keyframes nine{
+      0%{
+        transform:rotate(0deg);
+        /*transform-origin:10px 360px;*/
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+  /*  @keyframes moon{
+      0%{
+        transform:rotate(0deg);
+        transform-origin:10px 10px;
+      }
+      100%{
+        transform:rotate(0deg);
+        transform-origin:10px 10px;
+      }
+    }*/
+    @keyframes earth{
+      0%{
+        transform:rotate(0deg);
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+    .body:hover{
+      -webkit-animation-play-state:paused;
+    }
+    /*同心圆百分比 类似彩虹*/
+    /*月亮绕地球转地球绕太阳*/
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="sun"></div>
+      <div class="ball1"></div>
+    </div>
+    <div class="two">
+      <div class="ball2"></div>
+    </div>
+    <div class="three">
+      <div class="earth">
+      <div class="moon"></div>
+    </div>
+    </div>
+    <div class="four">
+      <div class="ball3"></div>
+    </div>
+    <div class="five">
+      <div class="ball4"></div>
+    </div>
+    <div class="six">
+      <div class="ball5">
+        <div class="huan"></div>
+      </div>
+    </div>
+    <div class="seven">
+      <div class="ball6"></div>
+    </div>
+    <div class="eight">
+      <div class="ball7"></div>
+    </div>
+    <div class="nine">
+      <div class="ball8"></div>
+
+    </div>
+
+  </body>
+</html>

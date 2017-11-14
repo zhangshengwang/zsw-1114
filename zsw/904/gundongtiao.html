@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>滚动显示</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      .container{
+        width:910px;
+        margin:50px auto;
+
+      }
+      .container img{
+        margin:0px 0px;
+      }
+      .container img:nth-child(1){
+        -webkit-animation:one  2s infinite linear;
+
+      }
+      .container img:nth-child(2){
+        -webkit-animation:two  2s infinite linear;
+        margin:50px auto;
+      }
+      .container img:nth-child(3){
+        -webkit-animation:three  2s infinite linear;
+      }
+      .container img:nth-child(4){
+        -webkit-animation:four  2s infinite linear;
+      }
+      .container img:nth-child(5){
+        -webkit-animation:five  2s infinite linear;
+      }
+      .container img:nth-child(6){
+        -webkit-animation:six  2s infinite linear;
+      }
+      .container img:nth-child(7){
+        -webkit-animation:seven  2s  infinite linear;
+      }
+      @keyframes one{
+        0%{
+        }
+        100%{
+          left:-63px;
+        }
+      }
+      @keyframes two{
+        0%{
+        }
+        100%{
+          left:63px;
+        }
+      }
+      @keyframes three{
+        0%{
+        }
+        100%{
+          left:489px;
+        }
+      }
+      @keyframes four{
+        0%{
+        }
+        100%{
+          left:423px;
+        }
+      }
+      @keyframes five{
+        0%{
+        }
+        100%{
+          left:360px;
+        }
+      }
+      @keyframes six{
+        0%{
+        }
+        100%{
+          left:px;
+        }
+      }
+      @keyframes seven{
+        0%{
+        }
+        100%{
+          left:100px;
+        }
+      }
+      @keyframes eight{
+        0%{
+        }
+        100%{
+          left:100px;
+        }
+      }
+      .container:hover{
+        -webkit-animation-play-state:paused;
+      }
+    </style>
+  </head>
+  <body>
+    <selection>
+    <div class="container">
+      <img src="image/1.jpg" alt=""/>
+      <img src="image/2.jpg" alt=""/>
+      <img src="image/3.jpg" alt=""/>
+      <img src="image/4.jpg" alt=""/>
+      <img src="image/5.jpg" alt=""/>
+      <img src="image/6.jpg" alt=""/>
+      <img src="image/7.jpg" alt=""/>
+    </div>
+</selection>
+  </body>
+</html>

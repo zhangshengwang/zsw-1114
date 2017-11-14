@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>产生随机颜色</title>
+    <style media="screen">
+      #col{
+        height:100px;
+        width:100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="col">
+
+    </div>
+    <script type="text/javascript">
+      // for(var i = 0; i < 255;i++){
+          // var str1 = console.log(Math.floor(Math.random()*(255 - 0 + 1) + 0));
+          // var col = str1.split(" ",3);
+    var a = (parseInt(255*Math.random()));//生成一个0-255的整数
+    var b = (parseInt(255*Math.random()));
+    var c = (parseInt(255*Math.random()));
+    //  console.log(a,b,c);
+    //  console.log(a +"," + b +"," +c);
+     var d = (a+"," + b+"," + c);
+     console.log("rgb(" +d+")");
+    var col = document.getElementById("col") ;
+
+
+    col.style.background = "rgb(d)";//如何转化为颜色输出
+
+
+    </script>
+  </body>
+</html>

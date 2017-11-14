@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="box" data-one="0" data-two="1" data-two-a="10"></div>
+    <script src="./jquery-3.0.0.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    var $box = $("#box")  ;
+    var box = $box.get(0);
+    console.log($box.data());
+    $box.data("four",30);
+    box.dataset.three = 33;
+    </script>
+  </body>
+</html>

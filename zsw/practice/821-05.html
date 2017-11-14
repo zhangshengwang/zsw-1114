@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>层级z-index</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      ul li{
+        list-style:none;
+      }
+      .one{
+        height:90px;
+        width:500px;
+        margin:50px auto;
+      }
+      .one li{
+        width:80px;
+        height:80px;
+        border:3px solid green;
+        float:left;
+        margin-left:-3px;
+      }
+      .one li:hover{
+        border-color:purple;
+        position:relative;
+        z-index:2;
+      }
+      .two,.three{
+        width:100px;
+        height:100px;
+        position:absolute;
+        top:0;
+        left:0;
+      }
+      .two{
+        background:yellow;
+        z-index:1;
+      }
+      .three{
+        background:blue;
+      }
+      .four{
+        height:200px;
+        border:1px solid red;
+        position:relative;
+        z-index:2;
+      }
+      .four_s{
+        width:100px;
+        height:100px;
+        background:purple;
+        position:absolute;
+        top:0;
+        left:0;
+      }
+      .five{
+        width:100px;
+        height:100px;
+        position:absolute;
+        top:191px;
+        left:1px;
+        background:pink;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <ul class="one">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+
+    </ul>
+    <div class="two">
+
+    </div>
+    <div class="three">
+
+    </div>
+    <div class="four">
+      <div class="four_s">
+
+      </div>
+
+      </div>
+      <div class="five">
+
+    </div>
+    /*一行排列默认情况下从左到右层级从0逐渐增大，最大无限接近于1
+    在同一个位置，都有定位，则按照顺序后面的高于前面的！！！！
+
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      border: 1px solid gray;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    tr,td,th {
+      border: 1px solid gray;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    td,th {
+      width: 120px;
+    }
+    </style>
+  </head>
+  <body>
+    <table id="stus">
+      <caption><h1>xuesheng</h1></caption>
+      <tbody>
+
+      </tbody>
+    </table>
+    <script type="text/javascript">
+     var data = {stus:[
+  {
+      "name":"lisi",
+      "age": 10,
+      "score": 88
+  },
+  {
+      "name":"zhangsan",
+      "age": 10,
+      "score": 88
+  },
+  {
+      "name":"zhaoliu",
+      "age": 10,
+      "score": 88
+  }]
+  };
+  console.log(data);
+
+  var tb = document.getElementById("data.stus");
+  for(var i =0; i < data.length;i++ ){
+    var trs = document.createElement("tr");
+    // var obj = document.createElement("tr");
+    //  obj.innerHTML = "<td>" + name  + "</td><td>" +
+    // age + "</td><td>" + score + "</td>"
+    trs.innerHTML = "<td>" +  data.stus[0] + "</td><td>" + data.stus[1]
+    + "</td><td>" + data.stus[2] + "</td>";
+    tb.appendChild(trs);
+  }
+  console.log(data.stus);
+  console.log(data.stus.name);
+
+    </script>
+  </body>
+</html>

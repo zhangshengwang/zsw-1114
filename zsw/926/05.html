@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>组合继承：借用构造函数 + 原型链继承</title>
+  </head>
+  <body>
+  <script type="text/javascript">
+  function Person(name,age)  {
+    this.name = name;
+    this.age = age;
+  }
+  Person.prototype.sayHello = function(){
+    console.log("hello....");
+  };
+  function Student(name,age,score){
+    Person.call(this,name,age);
+    this.score = score;
+  }
+  Student.prototype = new Person();
+  Student.prototype.constructor = Student;
+  var stu1 = new Student('lisi',20,59);
+  console.log(stu1);
+  stu1.sayHello();
+  </script>
+  </body>
+</html>

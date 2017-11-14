@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>心电图</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      .one{
+        height:380px;
+        width:100%;
+        position:relative;
+        background:url("./baidu/search-bg.png") repeat-x;
+      }
+       .two{
+        height:258px;
+        width:100%;
+        position:relative;
+        background:url("./baidu/bo.png") repeat-x;
+        transform:translate3d(0,-50%,0);
+        top:50%;
+        left:0;
+      }
+      .three{
+        height:258px;
+        width:100px;
+        position:relative;
+        background:url("./baidu/yellow-line.png");
+        top:0;
+        left:0;
+
+      }
+    </style>
+  </head>
+  <body>
+  <div class="one" >
+   <div class="two" >
+   <div class="three" id="sid">
+
+   </div>
+   </div>
+  </div>
+  <script src="./jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  var elem = document.querySelector("#sid");
+
+
+
+
+    // function handler (){
+    //   elem.style.left = elem.offsetLeft + 20 + "px";
+    //   elem.style.backgroundPosition = -elem.offsetLeft + "px 0";
+    //   if(elem.offsetLeft >= window.innerWidth - elem.offsetWidth){
+    //     //十分靠右边时
+    //     elem.style.left = "0px";
+    //     elem.style.backgroundPosition = "0px 0px";
+    //   }
+    //   setTimeout(() => {
+    //     window.requestAnimationFrame(handler)
+    //   },50);
+    // }
+    //  window.requestAnimationFrame(handler);
+
+
+
+
+
+
+
+    //原生方法。。。。。。。。。。。。。。。。。。。。。
+    //使用定时器
+    function move(){
+      var styles = window.getComputedStyle(elem);
+
+      setInterval(function(){
+        elem.style.left = elem.offsetLeft + 20 + "px";
+        elem.style.backgroundPosition = -elem.offsetLeft + "px 0";
+        if(elem.offsetLeft >= window.innerWidth - elem.offsetWidth){
+          elem.style.left = "0px";
+          elem.style.backgroundPosition = "0px 0px";
+        }
+      },100);
+    }
+    move();
+//定时器的不走？？？？？？
+
+
+
+
+
+  </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      .box{
+        width:1900px;
+        height:1000px;
+        position:relative;
+        background:lightblue;
+      }
+      @keyframes move{
+        0%{
+          transform:scale(0.9);
+        }
+        100%{
+          transform:scale(2.2);
+
+        }
+      }
+      @keyframes move1{
+        0%{
+
+          transform:scale(1.2);
+        }
+        100%{
+
+          transform:scale(0.8);
+        }
+      }
+      .one{
+        width:1900px;
+        height:200px;
+        background:url("./image/1.png");
+        position:absolute;
+        top:800px;
+        left:-100px;
+        -webkit-animation:move  linear 6s infinite;
+        background-size:contain;
+      }
+      .two{
+        width:1900px;
+        height:200px;
+        background:url("./image/2.png");
+        position:absolute;
+        top:800px;
+        left:-100px;
+        -webkit-animation:move1  linear 8s  reverse infinite;
+        background-size:cover;
+      }
+      .three{
+        width:100px;
+        height:100px;
+        background:yellow;
+        border-radius:50px;
+        box-shadow:6px -3px 31px lightyellow;
+        position:absolute;
+        top:200px;
+        left:200px;
+      }
+      .box:hover .one{
+        -webkit-animation-play-state:running;
+      }
+      .box:hover .two{
+        -webkit-animation-play-state:running;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+
+
+  </body>
+</html>

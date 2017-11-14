@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>xiaomidenglu</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      .denglukuang{
+        width:332px;
+        height:250px;
+        margin:100px 200px;
+        padding:100px 33px 240px 33px;
+        border:1px solid red;
+
+
+      }
+      .denglukuang>p{
+
+
+      }
+      .denglukuang .zhanghao{
+        width:334px;
+        height:48px;
+        border:1px solid black;
+        position:relative;
+
+
+      }
+      .denglukuang .zhanghao > input{
+        float:left;
+        width:260px;
+        height:48px;
+        font-size:16px;
+        border:none;
+        outline:none;
+        margin-left:20px;
+
+
+      }
+      .denglukuang .zhanghao > span{
+        position:absolute;
+        top:10px;
+        left:20px;
+      }
+      .denglukuang .mima{
+        width:334px;
+        height:48px;
+        border:1px solid black;
+        margin:15px auto 24px auto;
+        position:absolute;
+      }
+      .denglukuang .mima > input{
+        float:left;
+        width:260px;
+        height:48px;
+        font-size:16px;
+        border:none;
+        outline:none;
+        margin-left:20px;
+
+      }
+      .denglukuang .mima > span{
+        position:absolute;
+        top:10px;
+        left:20px;
+      }
+      .denglukuang .denglu{
+        width:336px;
+        height:50px;
+        background:red;
+        position:absolute;
+        top:340px;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="denglukuang">
+    <p></p>
+      <div class="zhanghao">
+        <input type="text" name="name">
+        <span></span>
+      </div>
+      <div class="mima">
+        <input type="text" name="passwd">
+        <span></span>
+      </div>
+      <button class="denglu">登录</button>
+
+    </div>
+    <script src="./jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      /*$(function(){
+        $(".zhanghao span").click(function(){
+        $(".zhanghao > input").focus();
+      });
+      $(".name > input").focus(function(){
+        $(".name span").hide();
+      }).blur(function(){
+        $(".name span").show();
+      });*/
+    });
+      $(function(){
+        $(".mima span").click(function(){
+        $(".mima > input").focus();
+      });
+      /*$(".passwd > input").focus(function(){
+        $(".passwd span").hide();
+      }).blur(function(){
+        $(".passwd span").show();
+      });*/
+    });
+    $(function(){
+    $("document").keydown(function(){
+      $(".zhanghao span").hide();
+    });
+  });
+    $("#denglu").click(function(){
+      $.ajax({
+        method:"post",
+        url:"/login",
+        data:{name:username,passwd:password},
+        success:function(data, textStatus, jqXHR){
+          console.log("recv from server:", data);
+          console.log("http status code:" + textStatus);
+          window.location = "https://www.jd.com/";
+        },
+
+            error:function(jqXHR,textStatus,error){
+              console.log("error");
+              console.log("http status code:" + textStatus);
+
+          }
+
+      });
+    });
+
+    </script>
+
+  </body>
+</html>

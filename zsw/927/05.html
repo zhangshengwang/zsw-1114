@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>replace</title>
+  </head>
+  <body>
+  <script type="text/javascript">
+  //String.prototype.replace()
+  //第一个参数是一个字符串，则只会替换第一个
+  var result = "helloworldhelloworld".replace("hello","HELLO");
+  console.log(result);
+
+
+
+  result = "helloworldhelloworld".replace(/hello/g,"HELLO");
+  console.log(result);
+
+  //如果第一个参数是正则表达式，则满足的都可替换
+
+
+  result = "helloworldhelloworldhelloworldhelloworld".replace
+  (/(hello)(world)/g,function(match,p1,p2,offset,str){
+    console.log("match = ",match);
+    console.log("p1 = ",p1);
+    console.log("p2 = ",p2);
+    console.log("offset = ",offset);
+    console.log("str = ",str);
+    return "HELLOWORLD";
+  });
+  console.log(result);
+
+
+  //连字符转驼峰法   border-left-width =====>borderLeftWidth
+  function toTuoFeng(str){
+    var result = str.replace(/-([a-z])/g,function(match,p1){
+      return p1.toUpperCase();
+    });
+    return result;
+  }
+  console.log(toTuoFeng("background-color"));
+  </script>
+  </body>
+</html>

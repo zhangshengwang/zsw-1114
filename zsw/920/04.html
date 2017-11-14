@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MATH</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    console.log(Math.min(1,2,3,4,10,-1,88));//-1
+    console.log(Math.max(1,2,3,4,10,-1,88));//88
+
+
+    //不可直接传递数组
+    //console.log(Math.max([1,2,3,5,10,-1,88]));
+
+    //使用apply对Math.max进行改造，然后可以传数组
+    console.log(Math.max.apply(null,[1,2,3,5,88]));//88
+
+
+    //取舍
+    //round-----------四舍五入
+    console.log(Math.round(20.1));//20
+    console.log(Math.round(20.6));//21
+    console.log(Math.round(-20.1));//-20
+    console.log(Math.round(-20.6));//-21
+
+
+
+
+    //ceil向上取    取值大于原来值
+    console.log(Math.ceil(20.1));//21
+    console.log(Math.ceil(20.6));//21
+    console.log(Math.ceil(-20.1));//-20
+    console.log(Math.ceil(-20.6));//-20
+
+
+    //floor向下取   取值小于原来值
+    console.log(Math.floor(20.1));//20
+    console.log(Math.floor(20.6));//20
+    console.log(Math.floor(-20.1));//-21
+    console.log(Math.floor(-20.6));//-21
+
+
+
+    //随机数，[0,1]
+    //Math.random()  属于伪随机
+     console.log(Math.random());
+
+
+
+    //[start,end]随机数，比如[10,21]
+    //Math.floor(Math,random() * (end - start + 1) + start);
+
+
+    for (var i = 0;i < 20;i++){
+      console.log(Math.floor(Math.random() * (21 -10 + 1) + 10));
+    }
+    //20个
+
+
+
+    console.log(Math.pow(12,30));//12^30
+    console.log(Math.PI/180*30);//弧度
+    console.log(Math.sqrt(9));//3
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function fun(){
+        var count = 0;//计数
+        function addCount(){
+          count++;
+        }
+        function minCount(){
+          count--;
+        }
+        function getCount(){
+          return count;
+        }
+        return [addCount,minCount,getCount];
+      }
+      var result = fun();//result ===fun()
+      var add = result[0];//
+      var min = result[1];
+      var get = result[2];
+      add();
+      min();
+      console.log(get());//0
+      console.log(add());//undefined
+      console.log(min());//undefined
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>call  and   apply</title>
+  </head>
+  <body>
+  <script type="text/javascript">
+  var name = 'global'  ;
+  function fun(arg1,arg2){
+    console.log("this = ",this);//window
+    console.log("this.name = ",this.name);//global
+    console.log("arg1 = ",arg1);//undefined
+    console.log("arg2 = ",arg2);//undefined
+  }
+  fun();
+
+  console.log("...................................");
+  var obj = {
+    name:'zhangsan',
+    age:20
+  };
+  var obj2 = {
+    name:'lisi',
+    age:20
+  }
+  fun.call(obj,10,20);
+  fun.call(obj2,100,200);
+  fun.call(null,1000,2000);
+
+
+  console.log("...............apply.......................");
+  fun.apply(obj,[10,20]);
+  </script>
+  </body>
+</html>

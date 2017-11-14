@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>用户操作系统</title>
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>操作系统</h1>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-success" id="add">增加</button>
+      <button type="button" class="btn btn-primary"id="delete">删除</button>
+      <button type="button" class="btn btn-info" id="revise">修改</button>
+      <button type="button" class="btn btn-warning" id="find">查询</button>
+      <script src="https://cdn.bootstrap.com/socket.io/2.0.3/socket.io.js" charset="utf-8"></script>
+      <script src="./js/jquery.min.js" charset="utf-8"></script>
+      <script type="text/javascript">
+      var socket = io("http://127.0.0.1:8000");
+        $("#add").click(function(add){
+          console.log("添加");
+          socket.emit('client message',{name:'i am client'},function(data){
+            console.log(data);
+          });
+        });
+        $("#delete").click(function(del){
+          console.log("删除");
+        });
+        $("#revise").click(function(rev){
+          console.log("修改");
+        });
+        $("#find").click(function(fin){
+          console.log("查找");
+        });
+      </script>
+    </div>
+  </body>
+</html>

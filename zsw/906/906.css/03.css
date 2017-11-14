@@ -1,0 +1,19 @@
+.one {
+  color: yellow;
+  height: 200px;
+  line-height: 200px; }
+
+.one_1 {
+  font-size: 50px;
+  color: green; }
+  .one_1 .one_1_1 {
+    background: red; }
+  .one_1::before {
+    content: "before..."; }
+
+.two div {
+  color: green; }
+.two > div {
+  font-size: 100px; }
+
+/*# sourceMappingURL=03.css.map */

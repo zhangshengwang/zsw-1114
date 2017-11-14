@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery DOM 操作</title>
+  </head>
+  <body>
+    <div class="one">
+      <h2>我是第一个one</h2>
+    </div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three">
+      <h2>three元素</h2>
+       <p>sdfd</p>
+       <p>sdfd</p>
+       <p>sdfd</p>
+       <p>sdfd</p>
+       <p>sdfd</p>
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script type="text/javascript">
+    $("body").append("<h2>通过append的方法追加到body的尾部</h2>");
+    $(".one").append("<p>追加的内容</p>")
+    $("<h2>appendTo追加</h2>").appendTo(".two");
+    var newElement=$("<a href='https://www.baidu.com'>链接</a>");
+    newElement.appendTo(".two");
+    $(".three p").prepend("<p>hello three!!</p>");
+    $(".three").prepend($("<p>three hello</p>"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      .one{
+        width:1000px;
+        height:800px;
+        position:relative;
+      }
+      .one .clock{
+        width:600px;
+        height:600px;
+        background:url("./clock/clock.jpg")  no-repeat;
+
+
+      }
+      .one .clock .hour{
+        width:30px;
+        height:600px;
+        background:url("./clock/hour.png") no-repeat;
+        position:absolute;
+        top:10px;
+        left:284px;
+      }
+      .one .clock .minute{
+        width:30px;
+        height:600px;
+        background:url("./clock/minute.png") no-repeat;
+        position:absolute;
+        top:10px;
+        left:284px;
+      }
+      .one .clock .second{
+        width:30px;
+        height:600px;
+        background:url("./clock/second.png") no-repeat;
+        position:absolute;
+        top:10px;
+        left:284px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="clock">
+<div id="hour" class="hour"></div>
+<div id="minute" class="minute"></div>
+<div id="second" class="second"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var hour = document.getElementById("hour");
+      var min = document.getElementById("minute");
+      var sec = document.getElementById("second");
+      var timer = null;
+      function sport(){
+        var time = new Date();
+        sec.style.transform = 'rotate(' + time.getSeconds() * 6 + 'deg)';//1s   6度
+        min.style.transform = 'rotate(' + (time.getMinutes() + time.getSeconds() / 60) * 6 + 'deg)';//1min   6度
+        hour.style.transform = 'rotate(' + (time.getHours() % 12 + time.getMinutes() / 60 + time.getSeconds() / 3600) * 30 + 'deg)';//1h  30度
+        console.log(sec.style.transform);
+      }
+      sport ();
+      var d = new Date();
+       console.log(d.toDateString());
+      setInterval(sport,10);
+    </script>
+  </body>
+</html>

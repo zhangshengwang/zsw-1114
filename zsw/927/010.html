@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>驼峰转连字符</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // function toLianZi(str){
+      //   var result = str.replace(/[A-Z]/g,"-$").toLowerCase();
+      //   });
+      //   return result;
+      // }
+      // console.log(toLianZi("borderLeftWidth"));
+
+      function toLianZi(str){
+        var result = str.replace(/[A-Z]/g,function(match){
+          return "-"+match.toLowerCase();
+        })
+
+       return result;
+    }
+      console.log(toLianZi("borderLeftWidth"));
+    </script>
+
+  </body>
+</html>

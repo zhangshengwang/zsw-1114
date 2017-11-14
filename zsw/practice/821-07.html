@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>使用伪元素清除浮动</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      .one{
+        font-size:50px;
+        color:red;
+      }
+      .one::before{
+        content:"";
+        color:green;
+      }
+      .one::after{
+        content:"after";
+        color:purple;
+      }
+      .clear::before,
+      .clear::after{
+        content:"";
+        clear:both;
+        display:block;
+      }
+      ul{
+        list-style:none;
+      }
+      .lists li{
+        float:left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      div元素
+      
+    </div>
+    <ul class="lists clearfix">
+      <li>111</li>
+      <li>222</li>
+      <li>333</li>
+
+    </ul>
+    <p>sadfsafsafsdafsadfsadfsadfsaf</p>
+
+  </body>
+</html>

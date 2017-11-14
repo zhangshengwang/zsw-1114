@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>定时器节流</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      table{
+        text-align:center;
+        border:1px solid gray;
+        border-collapse:collapse;
+      }
+      tr,td,th{
+        border:1px solid gray;
+      }
+      td,th{
+        width:100px;
+        height:80px;
+      }
+    </style>
+  </head>
+  <body>
+  <button id="start" name="button">点我生成表格</button>
+  <table id="stus">
+    <tbody>
+
+    </tbody>
+
+  </table>
+  <script type="text/javascript">
+  var start = document.getElementById("start")  ;
+  var stus = document.getElementById("stus");
+  var tb = stus.firstElementChild;
+  var count = 0,timer;
+  function createTable(){
+    count++;
+  
+  if(count >= 1000){
+    clearTimeout(timer);
+    return;
+  }
+  for(var i = 0; i < 10; i++){
+    var content = "<tr><td>lisi</td><td>22</td><td>男</td></tr>";
+    tb.innerHTML += content;
+  }
+  timer = setTimeout(creatTable,10);
+}
+document.onclick = function(){
+  alert("终于到我了。。。");
+}
+start.onclick = function(event){
+  event.stopPropagation();
+  createTable();
+};
+  </script>
+  </body>
+</html>

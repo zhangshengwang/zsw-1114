@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>服务端和客户端数据交互</title>
+  </head>
+  <body>
+    <input type="text" name="" >
+    <button type="button" id="btn">发送</button>
+    <script src="https://cdn.bootcss.com/socket.io/2.0.3/socket.io.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $("#btn").click(function(){
+      $.ajax({
+        method:'get',
+        url:,
+
+      }).done(function(data,status,jqXHR){
+
+      }).fail(function(jqXHR,status,error){
+        console.log("ajax请求失败： ", error);
+      });
+    });
+    var socket = io("http://127.0.0.1:8000")  ;
+    socket.on('server message',function(mesg){
+    });
+    socket.emit('client message',,function(data){
+
+    });
+    socket.on('user disconnect', function(mesg){
+      console.log(mesg);
+    });
+
+    socket.on('user connect', function(mesg){
+      console.log(mesg);
+    });
+
+
+    socket.on('system message', function(mesg){
+      console.log(mesg);
+    });
+    </script>
+
+  </body>
+</html>

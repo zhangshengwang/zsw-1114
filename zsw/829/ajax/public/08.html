@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ajax使用的基本步骤</title>
+  </head>
+  <body>
+    <button id="start">ajax</button>
+    <script src="./jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    function createXHR(){
+      if (typeof XMLHttpRequest != "undefined"){
+        return new XMLHttpRequest();
+      } else if (typeof ActiveXObject != "undefined"){
+        if (typeof arguments.callee.activeXString != "string"){
+          var versions = [ "MSXML2.XMLHttp.6.0", "MSXML2.XMLHttp.3.0",
+          "MSXML2.XMLHttp"], i, len;
+          for (i=0,len=versions.length; i < len; i++){
+            try {
+              new ActiveXObject(versions[i]);
+              arguments.callee.activeXString = versions[i];
+              break;
+            } catch (ex){
+            }
+          }
+        }
+        return new ActiveXObject(arguments.callee.activeXString);
+      } else {
+        throw new Error("No XHR object available.");
+      }
+    }
+    $("#start").click(function(){
+      var xhr = createXHR();
+      xhr.open("post","http://127.0.0.1:8000/index",true);
+      xhr.onreadystatechange = function(){
+        if(xhr.readyState===4){
+          if((xhr.status >= 200) && (xhr.status < 400)){
+            $("<h1>success</h1>").appendTo("body");
+          }else{
+            $("<h1>fail</h1>").appendTo("body");
+          }
+        }
+      };
+      xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+      xhr.send("name=lisi&age=22&score=88");
+      $("<h1>send   !</h1>").appendTo("body");
+    });
+
+
+    </script>
+
+  </body>
+</html>

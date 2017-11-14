@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>drowIamge绘制图片</title>
+  </head>
+  <body>
+    <img src="./monkey.jpg" id="img" alt="">
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script type="text/javascript">
+    var can = document.getElementById("canvas")  ;
+    can.width = 500;
+    can.height = 500;
+    can.style.border = "1px solid red";
+    var cxt = can.getContext("2d");
+    var img = document.getElementById("img");
+    img.onload = function(){
+      cxt.drawImage(img,100,100);
+      cxt.drawImage(img,0,0,100,100);
+      cxt.drawImage(img,57,96,97,97,350,350,45,45);
+    }
+    </script>
+  </body>
+</html>

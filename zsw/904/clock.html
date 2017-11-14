@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>clock</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      /*指针旋转90度*/
+      body{
+        position:relative;
+      }
+      .clock{
+        width:800px;
+        height:800px;
+        border:10px solid black;
+        border-radius:400px;
+        position:absolute;
+        top:100px;
+        left:300px;
+      }
+      .clock .top{
+        width:30px;
+        height:30px;
+        font-size:28px;
+        position: absolute;
+        top:0px;
+        left:379px;
+      }
+      .clock .bottom{
+        width:30px;
+        height:30px;
+        font-size:28px;
+        position: absolute;
+        top:773px;
+        left:386px;
+      }
+      .clock .left{
+        width:30px;
+        height:30px;
+        font-size:28px;
+        position: absolute;
+        top:375px;
+        left:0px;
+      }
+      .clock .right{
+        width:30px;
+        height:30px;
+        font-size:28px;
+        position: absolute;
+        top:376px;
+        left:783px;
+      }
+      .one{
+        width:800px;
+        height:1px;
+        background:pinsk;
+        position:absolute;
+        top:391px;
+        left:0px;
+      }
+      .two{
+        width:800px;
+        height:1px;
+        background:pink;
+        position:absolute;
+        top:391px;
+        left:0px;
+      }
+      .three{
+        width:1px;
+        height:800px;
+        background:pink;
+        position:absolute;
+        top:0px;
+        left:391px;
+      }
+      .four{
+        width:1px;
+        height:800px;
+        background:pink;
+        position:absolute;
+        top:0px;
+        left:391px;
+      }
+      .five{
+        width:1px;
+        height:810px;
+        background:red;
+        position:absolute;
+        top:-7px;
+        left:398px;
+        transform:rotate(120deg);
+      }
+      .six{
+        width:1px;
+        height:810px;
+        background:pink;
+        position:absolute;
+        top:-7px;
+        left:398px;
+        transform:rotate(120deg);
+      }
+      .seven{
+        width:1px;
+        height:810px;
+        background:yellow;
+        position:absolute;
+        top:-8px;
+        left:391px;
+        transform:rotate(30deg);
+      }
+      .eight{
+        width:1px;
+        height:810px;
+        background:pink;
+        position:absolute;
+        top:-8px;
+        left:391px;
+        transform:rotate(30deg);
+      }
+      .nine{
+        width:1px;
+        height:810px;
+        background:pink;
+        position:absolute;
+        top:-12px;
+        left:394px;
+        transform:rotate(60deg);
+      }
+      .ten{
+        width:1px;
+        height:810px;
+        background:pink;
+        position:absolute;
+        top:-12px;
+        left:394px;
+        transform:rotate(60deg);
+      }
+      .eleven{
+        width:1px;
+        height:810px;
+        background:pink;
+        position:absolute;
+        top:-6px;
+        left:397px;
+        transform:rotate(150deg);
+      }
+      .twelve{
+        width:1px;
+        height:810px;
+        background:pink;
+        position:absolute;
+        top:-6px;
+        left:397px;
+        transform:rotate(150deg);
+      }
+      .middle{
+        width:4px;
+        height:4px;
+        border:6px solid black;
+        border-radius:8px;
+        position:absolute;
+        top:386px;
+        left:385px;
+      }
+      .hour{
+        width:180px;
+        height:180px;
+        border-left:5px solid blue;
+        position:absolute;
+        top:210px;
+        left:391px;
+        -webkit-animation:hour 43200s infinite linear;
+        transform-origin:left bottom;
+      }
+      .min{
+        width:2800px;
+        height:280px;
+        border-left:3px solid purple;
+        position:absolute;
+        top:114px;
+        left:392px;
+        transform-origin:left bottom;
+        -webkit-animation:min 3600s  infinite linear;
+      }
+      .second{
+        width:350px;
+        height:350px;
+        border-left:2px solid green;
+        position:absolute;
+        top:43px;
+        left:393px;
+        -webkit-animation:second  60s infinite linear;
+        transform-origin:left bottom;
+      }
+      @keyframes second{
+        0%{
+          transform:rotate(0deg);
+        }
+        100%{
+          transform:rotate(360deg);
+        }
+      }
+      @keyframes min{
+        0%{
+          transform:rotate(0deg);
+        }
+        100%{
+          transform:rotate(360deg);
+        }
+      }
+      @keyframes hour{
+        0%{
+          transform:rotate(0deg);
+        }
+        100%{
+          transform:rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clock">
+      <div class="top">12</div>
+      <div class="bottom">6</div>
+      <div class="left">9</div>
+      <div class="right">3</div>
+
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+      <div class="six"></div>
+      <div class="seven"></div>
+      <div class="eight"></div>
+      <div class="nine"></div>
+      <div class="ten"></div>
+      <div class="eleven"></div>
+      <div class="twelve"></div>
+      <div class="middle"></div>
+      <div class="hour"></div>
+      <div class="min"></div>
+      <div class="second"></div>
+
+    </div>
+
+  </body>
+</html>

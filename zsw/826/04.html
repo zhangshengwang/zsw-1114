@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>submit</title>
+  </head>
+  <body>
+
+    <script src="./jquery.min.js" charset="utf-8"></script>
+    <form id="target" action="destination.html">
+  <input type="text" value="Hello there" />
+  <input type="submit" value="Go" />
+</form>
+<div id="other">
+  Trigger the handler
+  <script type="text/javascript">
+  $('#target').submit(function() {
+  alert('Handler for .submit() called.');
+  return false;
+});
+
+  </script>
+</div>
+  </body>
+</html>

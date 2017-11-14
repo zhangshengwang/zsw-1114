@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      .one{
+        width:1000px;
+        height:200px;
+        margin:50px auto;
+        position:relative;
+      }
+      .one .num1{
+        width:200px;
+        height:200px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+      }
+      .one .num1 .zuo1{
+        width:180px;
+        height:180px;
+        border:1px solid red;
+        border-radius:50%;
+        position:absolute;
+        top:8px;
+        left:8px;
+      }
+      .one .num2{
+        width:200px;
+        height:200px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+      }
+      .one .num2 .zuo2{
+        width:180px;
+        height:180px;
+        border:1px solid red;
+        border-radius:50% 50% 0 0;
+        position:absolute;
+        top:8px;
+        left:261px;
+      }
+      .one .num3{
+        width:200px;
+        height:200px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+
+      }
+      .one .num3 .zuo3{
+        width:180px;
+        height:90px;
+        border:1px solid red;
+        border-radius:90px 90px 0 0;
+        position:absolute;
+        top:50px;
+        left:512px;
+      }
+      .one .num4{
+        width:200px;
+        height:200px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+      }
+      .one .num4 .zuo4{
+        width:180px;
+        height:180px;
+        border:1px solid red;
+        border-radius:50% 0 0 0;
+        position:absolute;
+        top:8px;
+        left:765px;
+      }
+      .two{
+        width:1000px;
+        height:200px;
+        margin:50px auto;
+        position:relative;
+
+      }
+      .two .num1{
+        width:200px;
+        height:200px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+
+      }
+      .two .num1 .zuo1{
+        width:90px;
+        height:90px;
+        border:1px solid red;
+        border-radius:90px 0 0 0;
+        position:absolute;
+        top:50px;
+        left:50px;
+      }
+      .two .num2{
+        width:200px;
+        height:200px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+      }
+      .two .num2 .zuo2{
+        width:180px;
+        height:90px;
+        border:1px solid red;
+        border-radius:50% ;
+        position:absolute;
+        top:50px;
+        left:261px;
+      }
+      .two .num3{
+        width:200px;
+        height:200px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+
+      }
+      .two .num3 .zuo3{
+        width:90px;
+        height:180px;
+        border:1px solid red;
+        border-radius:50%;
+        position:absolute;
+        top:11px;
+        left:557px;
+      }
+      .two .num4{
+        width:200px;
+        height:200px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+      }
+      .two .num4 .zuo4{
+        width:180px;
+        height:45px;
+        border:1px solid red;
+        border-radius:50%/100% 100% 0 0;//90.........45
+        position:absolute;
+        top:66px;
+        left:765px;
+      }
+      .three{
+        width:1000px;
+        height:200px;
+        margin:50px auto;
+        position:relative;
+      }
+      .three .num1{
+        width:200px;
+        height:200px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+
+      }
+      .three .num1 .zuo1{
+        width:50px;
+        height:50px;
+        border:70px solid red;
+        border-radius:50%;
+        position:absolute;
+        top:8px;
+        left:8px;
+      }
+      .three .num2{
+        width:198px;
+        height:198px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+      }
+      .three .num2 .zuo2{
+        width:50px;
+        height:50px;
+        border:70px solid red;
+        border-radius:45px;
+        position:absolute;
+        top:8px;
+        left:258px;
+      }
+      .three .num3{
+        width:198px;
+        height:198px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+      }
+      .three .num3 .zuo3{
+        width:50px;
+        height:50px;
+        border:70px solid red;
+        border-radius:50% 0 50% 0;
+        position:absolute;
+        top:6px;
+        left:510px;
+       }
+      .three .num4{
+        width:198px;
+        height:198px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+      }
+      .three .num4 .zuo4{
+        width:190px;
+        height:190px;
+        border-top:98px solid red;
+        border-right:98px solid blue;
+        border-bottom:98px solid yellow;
+        border-left:98px solid green;
+        box-sizing:border-box;
+        position:absolute;
+        top:0px;
+        left:754px;
+       }
+      .four{
+        width:1000px;
+        height:200px;
+        margin:50px auto;
+        position:relative;
+      }
+      .four .num1{
+        width:198px;
+        height:198px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+      }
+      .four .num1 .zuo1{
+        width:190px;
+        height:190px;
+        border-top:98px solid red;
+        border-right:98px solid white;
+        border-bottom:98px solid yellow;
+        border-left:98px solid green;
+        box-sizing:border-box;
+        position:absolute;
+        top:0px;
+        left:3px;
+       }
+      .four .num2{
+        width:198px;
+        height:198px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+      }
+      .four .num2 .zuo2{
+        width:190px;
+        height:190px;
+        border-top:98px solid red;
+        border-right:98px solid white;
+        border-bottom:98px solid red;
+        border-left:98px solid red;
+        box-sizing:border-box;
+        border-radius:50%;
+        position:absolute;
+        top:0px;
+        left:253px;
+       }
+      .five{
+        width:1000px;
+        height:200px;
+        margin:50px auto;
+
+      }
+      .five .num1{
+        width:200px;
+        height:200px;
+        box-shadow:1px 1px 1px red;
+        border:1px solid black;
+        float:left;
+        margin-right:50px;
+      }
+      .five .num1 .zuo1{
+        background:linear-gradient(to bottom,red 50%,green 50%);
+        width:190px;
+        height:190px;
+        border:1px solid green;
+        border-radius:50%;
+        position:absolute;
+        top:1058px;
+        left:424px;
+        transition:all 5s ease;
+      }
+      .five .num1. .zuo1:hover{
+        transform:rotate(360deg) scale(2);
+      }
+      .five .num1 .zuo1 .left{
+        background:red;
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        position:absolute;
+        left:0;
+        top:50px;
+      }
+      .five .num1 .leftInner{
+        background:green;
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        position:absolute;
+        left:30px;
+        top:30px;
+
+      }
+      .five .num1 .right{
+        background:green;
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        position:absolute;
+        right:0;
+        top:50px;
+
+      }
+      .five .num1 .rightInner{
+        background:red;
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        position:absolute;
+        left:30px;
+        top:30px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="num1">
+        <div class="zuo1"></div>
+      </div>
+        <div class="num2">
+          <div class="zuo2"></div>
+      </div>
+      <div class="num3">
+        <div class="zuo3"></div>
+      </div>
+      <div class="num4">
+        <div class="zuo4"></div>
+      </div>
+    </div>
+      <div class="two">
+        <div class="num1">
+          <div class="zuo1"></div>
+        </div>
+        <div class="num2">
+          <div class="zuo2"></div>
+        </div>
+        <div class="num3">
+          <div class="zuo3"></div>
+        </div>
+        <div class="num4">
+          <div class="zuo4"></div>
+        </div>
+      </div>
+      <div class="three">
+        <div class="num1">
+          <div class="zuo1"></div>
+         </div>
+         <div class="num2">
+           <div class="zuo2"></div>
+           </div>
+           <div class="num3">
+             <div class="zuo3"></div>
+           </div>
+           <div class="num4">
+             <div class="zuo4"></div>
+           </div>
+      </div>
+      <div class="four">
+        <div class="num1">
+          <div class="zuo1"></div>
+        </div>
+        <div class="num2">
+          <div class="zuo2"></div>
+        </div>
+      </div>
+      <div class="five">
+        <div class="num1">
+          <div class="zuo1">
+            <div class="left">
+              <div class="leftInner">
+
+              </div>
+            </div>
+            <div class="right">
+              <div class="rightInner">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+  </body>
+</html>

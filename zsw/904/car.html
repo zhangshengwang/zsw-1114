@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>急开急停</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      .box{
+        width:1900px;
+        height:850px;
+        border-bottom:100px solid black;
+      }
+      @keyframes run{
+        0%{
+          left:0;
+          animation-timing-function:ease-out;
+          transform:skewX(6ss0deg);
+        }
+        50%{
+          left:1100px;
+          /*animation-timing-function:ease;*/
+        }
+        90%{
+          left:1400px;
+          animation-timing-function:ease-out;
+          transform:skewX(-60deg);
+        }
+        100%{
+          left:1500px;
+          animation-timing-function:ease-in;
+      }
+    }
+      .one{
+        width:200px;
+        height:79px;
+        position:absolute;
+        top:772px;
+        left:1px;
+        background:url("./image/car.jpg") no-repeat;
+        -webkit-animation:run 1.5s  1;
+        background-size:contain;
+
+      }
+      .one:hover{
+        -webkit-animation-play-state:running;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="one">
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
